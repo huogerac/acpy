@@ -45,15 +45,16 @@ def calcular(total, valores, operacoes):
     return total
     
 #Linha de comando
-operacoes = {'+' : op.add, 
-             '-' : op.sub, 
-             '*' : op.mul, 
-             '/' : op.div,
-             '**': op.pow}
-
-total = 0.0
-valores_input = ['+', 0.00] 
-while True:
-  print total
-  valores_input = ler_entrada(valores_input, operacoes)
-  total = calcular(total, valores_input, operacoes)             
+if __name__ == "__main__":
+    operacoes = {'+' : op.add, 
+                 '-' : op.sub, 
+                 '*' : op.mul, 
+                 '/' : op.div,
+                 '**': op.pow}
+    
+    total = 0.0
+    valores_input = ['+', 0.00] 
+    while True:
+      print total
+      valores_input = ler_entrada(valores_input, operacoes)
+      total = calcular(total, valores_input, operacoes)             
