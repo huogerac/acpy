@@ -7,6 +7,8 @@ Calculadora na linha de comando
 
     >>> calcular(0.0, ['+', 100.0], {'+' : op.add, '-' : op.sub, '*' : op.mul, '/' : op.div, '**': op.pow})
     100.0
+    >>> calcular(100.0, ['+', 100.0], {'+' : op.add, '-' : op.sub, '*' : op.mul, '/' : op.div, '**': op.pow})
+    200.0
 
 """
 
