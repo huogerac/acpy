@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     # url(r'^gerenciador/', include('gerenciador.foo.urls')),
     url(r'^$', 'agenda.views.lista'),
     url(r'^adiciona/$', 'agenda.views.adiciona'),
+    url(r'^item/(?P<nr_item>\d+)/$', 'agenda.views.item'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
